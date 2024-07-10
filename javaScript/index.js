@@ -1,3 +1,3 @@
-const data = Saya
+const data = "saya"
 
 console.log(data)
