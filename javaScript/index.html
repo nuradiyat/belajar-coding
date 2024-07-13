@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // type data number
+        document.writeln(100);
+        document.writeln("</br>");
+        document.writeln(180.123);
+        
+        // number Notation
+        // hexadecimal 0xff
+        // binary 0b10101
+        // 0ctal 0o10
+        document.writeln("</br>");
+        document.writeln(0b11010)
+        
+        // type data boolen yes or no
+        document.writeln("</br>");
+        document.writeln(true) // benar
+        document.writeln("</br>");
+        document.writeln(false) // salah
+
+        // type data string/text perlu menggunakan " atau '
+        document.writeln("type");
+        document.writeln("</br>");
+        document.writeln("string");
+        // menambahkan string menggunakan +
+        document.writeln("</br>");
+        document.writeln("type : " + "string");
+        // escape sequence
+        // \n untuk enter
+        // \t untuk tab
+        // \' untuk '
+        // \" untuk "
+        // \\ untuk \
+        document.writeln("</br>"); // writeln n akan mengenter jika writel tidak
+        document.writeln("<textarea cols='100' rows='10'>");
+        document.write("\'home\' adi \n");
+        document.write("\"beajar\"");
+        document.write("\\javascript\\");
+        document.writeln("</textarea>");
+
+        // variable
+        document.writeln("</br>");
+        var fullName ; // dangan deklarasi
+        var lastName;
+        var name = "adi";
+        var umur = "19";
+        
+        fullName = "Muhammad Nuradiayat";
+        lastName = "Nuradiayat";
+        
+        document.writeln(fullName);
+        document.writeln(lastName);
+        document.writeln(umur);
+        document.writeln(name);
+        
+        document.writeln("</br>");
+        var name = "adi";
+        document.writeln(name);
+        var name = "dede";
+        document.writeln(name);
+        document.writeln("</br>");
+
+        // type let dan const tidak boleh
+        // memiliki variable yg sama dan type 
+        // tersebut tidak bisa di deklarasikan
+
+        // operator matematika/aritmatika
+        let result =  1 + 2; // 3
+        document.writeln("<p>1 + 2 = " + result + "</p>")
+        let originalResult = result; // 3
+
+        result = result - 1; // 2 // bukan deklari karna result pertama 
+        // sudah ada isi nya ini membuat varibel baru yang sama tapi 
+        // velue berbeda 
+        document.writeln("<p>" + originalResult + " - 1  = " + result +"</P>");
+        originalResult = result; // 2
+
+        result = result * 2; //4
+        document.writeln("<p>" + originalResult + " * 2 = " + result + "</p>");
+        originalResult = result;
+        
+        // arirmatika dengan cara augmented assigments
+        let res =  1 + 2; // 3
+        document.writeln("<p>1 + 2 = " + res + "</p>")
+        let original = res; // 3
+
+        res -= 1; // 2 // bukan deklari karna res pertama 
+        // sudah ada isi nya ini membuat varibel baru yang sama tapi 
+        // velue berbeda 
+        document.writeln("<p>" + original + " - 1  = " + res +"</P>");
+        original = res; // 2
+
+        res *= 2; //4
+        document.writeln("<p>" + original + " * 2 = " + res + "</p>");
+        original = res;
+        
+        // operatot unery
+        let ps = +3; 
+        document.writeln("<p>" + ps + "</p>");
+
+        ps--; // ps = ps - 1; ps -= 1; hasil 2
+        document.writeln("<p>" + ps + "</p>")
+
+        ps++; // ps = ps + 1; ps += 1; hasil 3
+        document.writeln("<p>" + ps + "</p>")
+        
+        ps = -ps; // hasil -3 
+        document.writeln("<p>" + ps + "</p>")
+
+        // !!!!!!!!!
+        let coba;
+        coba = "saya"; // deklarasi
+        document.writeln(coba);
+      </script>
+  </body>
+</html>
