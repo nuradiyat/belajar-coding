@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let names = [];
+        let hobi = ["Coding", "swim", "sholat", "ngaji"];
+
+        // metods push untuk mengrikan data 
+        // ke variable array
+        names.push("Muhammad Nuradiyat");
+        names.push("Putra", "dapin");
+
+        names[0] = "budi"; // merubah index dan data
+        // metods push jika ingin di tampil
+        // dalam betuk table
+        console.table(names);
+        console.info(names[2]);
+        console.info(names[1]);
+
+        names[1] = "toto";
+        names[5] = "toto";
+        console.table(names)
+        
+        // menghapus data
+        delete names[5]
+        console.table(names)
+ 
+
+    </script>
+</body>
+</html>
