@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // type data object mirip dengan array
+        // beda nya index, index di type object type nya string (propertis/atribut)
+        const person = {};
+        person["Nim"] = "1923094";
+        person["Nama"] = "Muhammad Nuradiyat";
+        person["No"] = "0895454758";
+
+        console.table(person);
+        
+        delete person["Nama"];
+        console.table(person);
+        
+        const perpustakan = {
+            buku : "papa zola",
+            penulis : "zola",
+            // jika ingin ada spasi pada atribut
+            "terbit tahun" : "2023",
+        };
+        console.table(perpustakan);
+        
+        // jika atribut spasi pemanggilan seperti ini
+        console.info(`nama : ${perpustakan["terbit tahun"]}`);
+        console.info(`nama : ${perpustakan.penulis}`);
+        
+        
+        
+        
+    </script>
+</body>
+</html>
