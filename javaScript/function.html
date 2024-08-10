@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getFinalValue(value) {
+            if (value > 90) {
+                return "a";
+            } else if (value > 80) {
+                return "b";
+            } else if (value > 70) {
+                return "c";
+            } else if (value > 60) {
+                return "d";
+            } else {
+                return "e"
+            }
+        }
+
+    // jika kita mengmangil hanya fungsi saja itu tidak bisa
+    getFinalValue(90);
+    // karena fungsi terbut mengembalikan sbuah nilai(return) jadi perlu di tangkap
+    const data = getFinalValue(90);
+
+    document.writeln(`<p>Nilai Kamu ${data}</p>`)
+    </script>
+</body>
+</html>
